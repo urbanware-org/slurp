@@ -1,0 +1,55 @@
+
+README (Slurp)
+
+    Definition
+    
+        Script to gather requested files (by their extension) from certain
+        media such as flash drives, internal and external hard disks.
+    
+    Details
+    
+        The main purpose of this script is (or was) the ability to simply get
+        and automatically copy all files of a special type from certain media
+        to a user-defined target directory.
+        
+        All files in the data source will not be changed by the script.
+        
+        For each file type a corresponding sub-directory inside the target
+        directory will be created.
+        
+        The name of the copied files will be tagged with a leading consecutive
+        number in the target directory, so in case there are different files
+        of the same type and with the same name from different locations, all
+        will be gathered as separate files.
+        
+        You can remove the leading numbers with a command like this (in this
+        example '/tmp/slurp/gathered_data' is the target directory):
+        
+            $ find /tmp/slurp/gathered_data -type f > /tmp/filelist
+            $ while read line; do \
+                mv "$line" "$(echo $line | sed -e 's/[0-9]\{10\}_//g')"; \
+              done < /tmp/filelist
+            $ rm -f /tmp/filelist
+            
+        Notice that if there are multiple files with the same name and the
+        numbers will be removed only one file will remain. So, check on that
+        first.
+        
+        Furthermore, if you want to get sure that this works as expected, you
+        may replace the 'mv' command above with "echo" first.
+
+        Anyway, the script was written within a few minutes and thus it is
+        pretty cheesy (including "useless use of" code). So, there is a lot of
+        stuff that can be improved.
+        
+        Feel free to modify!
+        
+    Usage
+    
+        The script is interactive, just run it on the shell by typing
+        
+            $ ./slurp.sh
+            
+        or alternatively, you can use command-line arguments instead. For
+        details about them see the script code.
+
