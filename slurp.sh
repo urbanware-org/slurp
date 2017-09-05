@@ -4,7 +4,7 @@
 # Slurp - File gathering script
 # Copyright (C) 2017 by Ralf Kilian
 # Distributed under the MIT License (https://opensource.org/licenses/MIT)
-# 
+#
 # Website: http://www.urbanware.org
 # GitHub: https://github.com/urbanware-org/slurp
 # ============================================================================
@@ -23,7 +23,7 @@ echo "Distributed under the MIT License"
 echo
 
 echo "You can cancel this script at any time by pressing Ctrl+C."
-echo 
+echo
 
 if [ -z "$source_path" ] || \
    [ -z "$target_path" ] || \
