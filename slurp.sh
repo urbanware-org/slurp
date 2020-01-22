@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # ============================================================================
 # Slurp - File gathering script
@@ -85,4 +85,3 @@ echo "See '$target_path' for the results."
 echo
 
 # EOF
-
