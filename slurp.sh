@@ -71,7 +71,7 @@ echo
 digits=10
 for item in $(echo ${file_ext}); do
     num=0
-    echo -e "\e[93mCurrent extension:\e[0m " \
+    echo -e "\e[93mCurrent extension:\e[0m" \
             "$(tr '[:upper:]' '[:lower:]' <<< ${item}) ... \c"
 
     mkdir -p ${target_path}/slurp_${item}
