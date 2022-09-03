@@ -9,7 +9,7 @@
 # GitLab: https://gitlab.com/urbanware-org/slurp
 #
 
-version="1.2.0"
+version="1.2.1"
 
 echo
 echo -e "\e[93mSlurp - Automated file gathering script\e[0m"
