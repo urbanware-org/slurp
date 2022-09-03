@@ -51,13 +51,11 @@ elif [ "${source_path}" = "${target_path}" ]; then
     echo -e \
         "\n\e[91merror:\e[0m Source and target path must be different\n"
     exit 1
-elif [ ! -e "${target_path}" ]; then
-    echo -e "\n\e[91merror:\e[0m Given target path does not exist\n"
-    exit 1
-elif [ ! -d "${target_path}" ]; then
-    echo -e "\n\e[91merror:\e[0m Given target path must be a directory\n"
+elif [ -e "${target_path}" ]; then
+    echo -e "\n\e[91merror:\e[0m Given target path already exists\n"
     exit 1
 fi
+mkdir -p ${target_path}
 echo
 
 echo -e "\e[96mFile extension\e[0m, multiple separated with spaces." \
