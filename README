@@ -46,12 +46,10 @@ README (Slurp)
 
     Usage
 
-        The script is interactive, just run it on the shell by typing
+        The script is interactive, just run it on the shell without any
+        command-line arguments:
 
             $ ./slurp.sh
-
-        or alternatively, you can use command-line arguments instead. For
-        details about them see the script code.
 
     Contact
 
