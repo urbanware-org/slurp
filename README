@@ -38,9 +38,9 @@ README (Slurp)
         Furthermore, if you want to get sure that this works as expected, you
         may replace the 'mv' command above with "echo" first.
 
-        Anyway, the script was written within a few minutes and thus it is
-        pretty cheesy (including "useless use of" code). So, there is a lot of
-        stuff that can be improved.
+        Anyway, the script (its core functionality to be precise) was written
+        within a few minutes and thus it is pretty cheesy (including "useless
+        use of" code). So, there is a lot of stuff that can be improved.
 
         Feel free to modify!
 
